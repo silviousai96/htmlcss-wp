@@ -16,6 +16,11 @@ img {
     width: 100%;    
 }
 
+.grey-text {
+    font-size: 16px;
+    color: #bcbcbc;
+}
+
 /* header */
 
 .logo img {
@@ -23,25 +28,64 @@ img {
 }
 
 nav{
-    height: 100px;
-    background-color: pink;
+    margin-top: 30px;
+    margin-bottom: 30px;
+       
+}
+
+.menu {
+    list-style-type: none;
+}
+
+.menu li{
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.menu li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #b9b9b9;
+}
+
+.banner {
+    height: 450px;
+    background-image: url('../img/banner.jpg');
+    background-position: center;
+    border-radius: 10px;
+    margin-bottom: 30px;    
+    position: relative;
+}
+
+.banner .teaser {
+    color: white;
+    width: 50%;
+    position: absolute;
+    bottom: 10%;
+    left: 5%;
     
 }
 
-.h-second {
-    height: 400px;
-    background-color: #e1d67a;
-    margin-bottom: 20px;    
+.layover{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
 }
 
 /* main */
 
-.m-first {
-    background-color: #abcfe7;
+.title {
     height: 70px;
+    
 }
 
-.clearfix::after {
+.title h2 {
+    font-size: 25px;
+}
+
+
+.content::after {
     content: "";
     display: table;
     clear: both;
@@ -49,25 +93,47 @@ nav{
 
 .col {
     float: left;
-    height: 400px;
 }
 
-.m-second {
-    /* #0086fb; */
+
+.col-img1 {    
+    background-image: url('../img/img-1.jpg');  
+    height: 200px;
+    background-size: cover;
+    background-position: bottom; 
+}
+
+.col-img2 {    
+    background-image: url('../img/banner-2.jpg');  
+    height: 200px;
+    background-size: cover;
+    background-position: center; 
+}
+
+.col-img3 {    
+    background-image: url('../img/img-3.jpg');  
+    height: 200px;
+    background-size: cover;
+    background-position: center; 
+}
+
+.content {
     margin: 20px 0;    
 }
 
 .col-left, .col-right {
-    width: 20%;    
-    background-color: #abcfe7;
+    width: 20%;        
 }
 
 .col-center {
-    width: 58%;       
-    background-color: #abcfe7;
+    width: 58%;           
     margin: 0 1%;
 }
 
+.content h3 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
 /* footer */
 
 footer {
