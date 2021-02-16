@@ -82,7 +82,7 @@ nav{
     font-weight: bold;
 }
 
-.content::after {
+.clearfix::after {
     content: "";
     display: table;
     clear: both;
